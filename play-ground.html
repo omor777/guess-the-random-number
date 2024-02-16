@@ -36,25 +36,29 @@
   </head>
   <body class="font-roboto min-h-screen">
     <section class="bg-slate-300 min-h-screen grid place-items-center">
-      <div class="max-w-[700px] bg-white/80 rounded-xl shadow-xl p-10">
-        <h2
-          class="bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text [-webkit-text-fill-color:transparent] text-3xl font-bold text-center mb-6"
-        >
-          Guess the random number between 1-100
-        </h2>
-        <div class="">
-          <img class="max-w-full" src="./images/game2.svg" alt="game-photo" />
+      <div
+        class="bg-white/80 rounded-xl shadow-xl p-10 gap-5 w-full max-w-[650px] min-h-[400px]"
+      >
+        <div class="flex items-center justify-center">
+          <button class="btn btn-primary px-8 text-lg mb-5 hidden">New Game</button>
         </div>
-        <h4 class="text-2xl font-semibold text-center mt-8">
-          Select The Difficulty
-        </h4>
-        <div class="flex flex-col items-center gap-5 mt-6">
-          <a href="play-ground.html" class="btn btn-wide btn-info text-white">
-            Easy 10 Attempts
-          </a>
-          <a id="easy-btn" href="play-ground.html" class="btn btn-wide btn-info text-white">
-            Hard 5 Attempts
-          </a>
+        <h3 class="text-2xl font-medium text-center mb-5">
+          Your guess is High
+        </h3>
+        <input
+          type="number"
+          placeholder="Enter your guess"
+          class="input input-bordered input-info placeholder:text-center placeholder:text-lg placeholder:font-semibold text-center text-xl font-bold block mx-auto"
+        />
+        <div class="w-full space-y-4 mt-24">
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">Number of Previous attempts</p>
+            <p class="text-xl font-bold text-red-500">0</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="text-xl font-semibold">Number of Previous Guesses</p>
+            <p class="text-3xl text-red-600">-</p>
+          </div>
         </div>
       </div>
     </section>
